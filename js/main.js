@@ -1,4 +1,4 @@
-alert("Bienvenidos a dg3") 
+alert("Bienvenidos a gaspar online") 
 const x = Infinity
 let carrito = 0
 const remeras = 1500
@@ -7,6 +7,45 @@ const pantalones = 2000
 let cantidadRemeras
 let cantidadBuzos
 let cantidadPantalones
+
+
+
+class Usuario {
+    constructor(nombre, edad,){
+    this.nombre = nombre
+    this.edad = edad
+        
+    }
+
+    saludar (){
+        alert("Buenos dias " + this.nombre + " esperamos que puedas disfrutar de nuestra tienda")
+    }
+}
+const persona1=new Usuario(prompt("ingrese su nombre"), prompt( "ingrese su edad"));
+
+persona1.saludar();
+
+class ropa{
+    constructor(producto, tipo, extra){
+        this.producto = producto;
+        this.tipo = tipo;
+        this.extra = extra;
+    }
+}
+
+function comprar() {
+    const combos = [];
+    let producto = prompt(" Que tipo de ropa desea comprar? ");
+
+    let tipo = prompt("ajustado o suelto? ");
+
+    let extra = prompt("liso o rallado?");
+
+    const combo = new ropa(producto, tipo, extra);
+    combos.push(combo);
+}
+
+comprar();
 
 
 function catalogo() {
@@ -28,7 +67,15 @@ function catalogo() {
         }
     }
 }
+
 catalogo(x)
+
+alert(persona1.nombre + " finalisaste tu compra, el total es de " + carrito );
+
+
+
+
+
 
 
 
