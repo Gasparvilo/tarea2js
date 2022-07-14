@@ -1,4 +1,4 @@
-alert("Bienvenidos a gaspar online") 
+alert("Bienvenidos a tu tienda online") 
 const x = Infinity
 let carrito = 0
 const remeras = 1500
