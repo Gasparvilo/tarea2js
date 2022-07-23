@@ -73,9 +73,19 @@ catalogo(x)
 alert(persona1.nombre + " finalisaste tu compra, el total es de " + carrito );
 
 
+let btn = document.getElementById("btn"),
+    caja=document.getElementById("caja"),
+    contador=0;
 
-
-
+function cambio(){
+     if (contador == 0){
+    caja.classList.add("dark");
+        contador=1;
+    }
+    else {caja.classList.remove("dark")
+    contador=0;}
+};
+btn.addEventListener("click",cambio,true);
 
 
 

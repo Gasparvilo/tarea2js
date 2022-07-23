@@ -1,0 +1,53 @@
+.registro1 {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 50px; }
+  
+  .registro1 h1 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  
+  .control2 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px; }
+  
+  .registro1 p {
+    height: 40px;
+    text-align: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  
+  .registro1 a {
+    color: white;
+    text-decoration: none; }
+  
+  .botones {
+    width: 100%;
+    background-color: #262b75;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px; }
+
+
+    
+    .caja.dark{
+        border:rgb(214, 38, 38) 2px solid;
+        background-color: rgb(44, 44, 44);
+        color: aliceblue;
+    }
