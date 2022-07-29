@@ -10,6 +10,7 @@ let cantidadPantalones
 
 
 
+
 class Usuario {
     constructor(nombre, edad,){
     this.nombre = nombre
@@ -78,19 +79,54 @@ let btn = document.getElementById("btn"),
     contador=0;
 
 function cambio(){
-     if (contador == 0){
+    if (contador == 0){
     caja.classList.add("dark");
         contador=1;
     }
     else {caja.classList.remove("dark")
     contador=0;}
 };
+
+
+
+
+
+
+
+
 btn.addEventListener("click",cambio,true);
 
+let nombreusuario = localStorage.getItem('nombreusuario')
+let apellidousuario = localStorage.getItem('apellidousuario')
+
+document.getElementById('nombreusuario').value = nombreusuario;
+document.getElementById('apellidousuario').value = apellidousuario;
 
 
+function ValidarFormulario(){
+    let nombreusuario = document.getElementById('nombreusuario').value;
+    let apellidousuario = document.getElementById('apellidousuario').value;
+
+    localStorage.setItem('nombreusuario', nombreusuario);
+    localStorage.setItem('apellidousuario', apellidousuario);
+
+}
 
 
+const productos = [ 
+    { id: 1, nombre: "CALLIA CABERNET SAUV. Alta", precio: 343},
+    {id: 2, nombre: "ESPERADO MALBEC", precio: 450},
+    { id: 3, nombre: "KILLKA BLEND", precio: 630},
+    {id: 4, nombre: "PORTILLO DULCE NATURAL", precio: 480},
+    { id: 5, nombre: "SALENTEIN BRUT NATURE", precio: 700},
+    { id: 5, nombre: "SALENTEIN MALBEC RESERVA", precio: 1300},
+]
+{}
 
-
-
+for (const producto of productos) {
+    let contenedor = document.createElement("div");
+    contenedor.innerHTML = `<h3> ${producto.nombre}</h3>
+                <p>el valor es de: ${producto.precio}</p>
+                <p> ${producto.id}</p>`
+                document.body.appendChild(contenedor);
+    }
